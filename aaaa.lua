@@ -6,7 +6,10 @@ while true do
         local colNum = math.random(0,14)
         colBit = bit.blshift(colBit,colNum)
         term.setTextColor(colBit)
-        write("A")
+        if i < num then
+            write("A")
+        else
+            write("H")
     end
     sleep(0.01)
     print("")
